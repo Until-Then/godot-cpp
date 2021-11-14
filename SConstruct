@@ -491,3 +491,5 @@ library = env.StaticLibrary(
     ), source=sources
 )
 Default(library)
+
+CacheDir('../.cache/scons')
