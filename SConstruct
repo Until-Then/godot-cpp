@@ -523,3 +523,5 @@ if env["build_library"]:
 env.Append(LIBPATH=[env.Dir("bin")])
 env.Append(LIBS=library_name)
 Return("env")
+
+CacheDir("../.cache/scons")
