@@ -534,3 +534,5 @@ env.Append(CPPPATH=[env.Dir(f) for f in [env["headers_dir"], "include", "include
 env.Append(LIBPATH=[env.Dir("bin")])
 env.Append(LIBS=library_name)
 Return("env")
+
+CacheDir("../.cache/scons")
