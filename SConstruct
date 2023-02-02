@@ -4,6 +4,8 @@ import os
 import sys
 import subprocess
 
+CacheDir("../.cache/scons")
+
 if sys.version_info < (3,):
 
     def decode_utf8(x):
@@ -534,5 +536,3 @@ env.Append(CPPPATH=[env.Dir(f) for f in [env["headers_dir"], "include", "include
 env.Append(LIBPATH=[env.Dir("bin")])
 env.Append(LIBS=library_name)
 Return("env")
-
-CacheDir("../.cache/scons")
